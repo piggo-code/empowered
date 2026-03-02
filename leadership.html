@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meet the leadership team and founders of Empowered Women Rising Trust Association (EWRTA)."
+    />
+    <title>EWRTA | Leadership</title>
+
+    <!-- Preconnect for performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <style>
+      /* 
+       ENTERPRISE-GRADE CSS SYSTEM 
+       Mobile-First | Accessible | Performance Optimized
+       Color Palette: EWRTA Brand Colors
+    */
+
+      :root {
+        /* --- Brand Colors --- */
+        --deep-purple: #2e0f3a;
+        --rich-purple: #5b2a86;
+        --gold: #d4af37;
+        --soft-gold: #f1e5ac;
+        --off-white: #f8f5f2;
+        --text-dark: #333333;
+
+        /* --- Semantic Color Mappings --- */
+        --color-primary: var(--deep-purple);
+        --color-primary-light: var(--rich-purple);
+        --color-accent: var(--gold);
+        --color-accent-soft: var(--soft-gold);
+        --color-bg-body: var(--off-white);
+        --color-bg-card: #ffffff;
+        --color-text-main: var(--text-dark);
+        --color-text-muted: #666666;
+
+        /* --- Typography Scale (Fluid) --- */
+        --font-heading: "Montserrat", system-ui, sans-serif;
+        --font-body: "Nunito Sans", system-ui, sans-serif;
+
+        /* --- Spacing Scale (rem) --- */
+        --space-xs: 0.5rem;
+        --space-sm: 1rem;
+        --space-md: 2rem;
+        --space-lg: 3rem;
+        --space-xl: 5rem;
+
+        /* --- Layout & Effects --- */
+        --radius: 8px;
+        --radius-lg: 16px;
+        --shadow-sm: 0 2px 8px rgba(46, 15, 58, 0.06);
+        --shadow-md: 0 8px 24px rgba(46, 15, 58, 0.12);
+        --shadow-lg: 0 15px 40px rgba(46, 15, 58, 0.15);
+        --transition: 200ms ease-in-out;
+      }
+
+      /* --- Global Reset & Base --- */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        font-family: "Nunito Sans", sans-serif;
+        font-weight: 400;
+        background-color: var(--color-bg-body);
+        color: var(--color-text-main);
+        line-height: 1.7;
+        font-size: 1rem;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* --- Layout Container --- */
+      .container-leadership {
+        width: 90%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: var(--space-lg) 0;
+      }
+
+      /* --- Page Header --- */
+      .page-header {
+        text-align: center;
+        margin-bottom: var(--space-xl);
+      }
+
+      .page-header h1 {
+        font-family: var(--font-heading);
+        font-size: clamp(2rem, 5vw, 3rem);
+        color: var(--color-primary);
+        margin-bottom: var(--space-xs);
+        font-weight: 700;
+      }
+
+      .page-header::after {
+        content: "";
+        display: block;
+        width: 60px;
+        height: 4px;
+        background: linear-gradient(
+          90deg,
+          var(--color-accent),
+          var(--color-primary-light)
+        );
+        margin: var(--space-sm) auto 0;
+        border-radius: 2px;
+      }
+
+      /* --- Founders Statement Section --- */
+      .statement-section {
+        background-color: var(--color-bg-card);
+        padding: var(--space-md);
+        border-radius: var(--radius-lg);
+        box-shadow: var(--shadow-sm);
+        margin-bottom: var(--space-xl);
+        border-left: 5px solid var(--color-accent);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .statement-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 3px;
+        background: linear-gradient(
+          90deg,
+          var(--color-primary),
+          var(--color-primary-light),
+          var(--color-accent)
+        );
+      }
+
+      .statement-section h2 {
+        font-family: var(--font-heading);
+        font-size: 1.5rem;
+        color: var(--color-primary);
+        margin-bottom: var(--space-sm);
+      }
+
+      .statement-section p {
+        margin-bottom: var(--space-sm);
+        color: var(--color-text-muted);
+        font-size: 1.1rem;
+        line-height: 1.7;
+      }
+
+      .statement-section p:last-child {
+        margin-bottom: 0;
+      }
+
+      /* --- Leadership Grid System --- */
+      .leadership-section h2 {
+        font-family: var(--font-heading);
+        font-size: 1.75rem;
+        color: var(--color-primary);
+        margin-bottom: var(--space-md);
+        text-align: center;
+      }
+
+      .leadership-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+      }
+
+      @media (min-width: 640px) {
+        .leadership-grid {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+
+      @media (min-width: 1024px) {
+        .leadership-grid {
+          grid-template-columns: repeat(3, 1fr);
+        }
+      }
+
+      /* --- Profile Card Component --- */
+      .profile-card {
+        background: var(--color-bg-card);
+        border-radius: var(--radius);
+        overflow: hidden;
+        box-shadow: var(--shadow-sm);
+        transition: transform var(--transition), box-shadow var(--transition);
+        display: flex;
+        flex-direction: column;
+        border: 1px solid rgba(46, 15, 58, 0.06);
+      }
+
+      .profile-card:hover {
+        transform: translateY(-5px);
+        box-shadow: var(--shadow-lg);
+      }
+
+      /* --- Image Area (Placeholder System) --- */
+      .profile-image {
+        position: relative;
+        width: 100%;
+        padding-bottom: 125%;
+        background: linear-gradient(
+          135deg,
+          var(--soft-gold),
+          var(--color-bg-body)
+        );
+        overflow: hidden;
+      }
+
+      .profile-image img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center top;
+        transition: opacity var(--transition);
+      }
+
+      /* Placeholder Styling (Visible when image fails or missing) */
+      .profile-image::before {
+        content: "No Photo Available";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: var(--rich-purple);
+        font-size: 0.9rem;
+        text-align: center;
+        z-index: 0;
+        opacity: 0.5;
+      }
+
+      .profile-image img + ::before {
+        display: none;
+      }
+
+      /* --- Card Content --- */
+      .profile-content {
+        padding: var(--space-sm);
+        text-align: center;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-top: 3px solid var(--color-accent);
+        background: var(--color-bg-card);
+      }
+
+      .profile-content h3 {
+        font-family: var(--font-heading);
+        font-size: 1.25rem;
+        color: var(--color-primary);
+        margin-bottom: 4px;
+        font-weight: 700;
+      }
+
+      .profile-role {
+        font-weight: 600;
+        color: var(--color-primary-light);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        margin-bottom: var(--space-xs);
+      }
+
+      .profile-bio {
+        font-size: 0.9rem;
+        color: var(--color-text-muted);
+        line-height: 1.5;
+      }
+
+      /* --- Accessibility Focus States --- */
+      a:focus,
+      button:focus {
+        outline: 3px solid var(--color-accent);
+        outline-offset: 2px;
+      }
+
+      /* --- Selection Styling --- */
+      ::selection {
+        background: var(--color-accent);
+        color: var(--color-primary);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header-left">
+          <img class="logo" src="./img/ewrta.png" alt="EWRTA Logo" />
+          <div id="branding">
+            <h1><span class="highlight">Empowered Women</span></h1>
+            <h1>Rising Trust Association</h1>
+          </div>
+        </div>
+        <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+        <label for="nav-toggle" class="menu-icon" aria-label="Toggle Menu">
+          <span></span><span></span><span></span>
+        </label>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./programs&initiatives.html">Programs</a></li>
+            <li><a href="./get-involved.html">Get Involved</a></li>
+            <li class="current"><a href="./leadership.html">Leadership</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container-leadership" role="main">
+      <!-- Page Title -->
+      <section class="page-header">
+        <h1>Our Leadership</h1>
+      </section>
+
+      <!-- Founders' Statement Section -->
+      <section class="statement-section" aria-labelledby="statement-heading">
+        <h2 id="statement-heading">Founders' Statement</h2>
+        <p>
+          Empowered Women Rising Trust Association was established during the
+          COVID-19 era as a response to the need for unity, resilience, and
+          mutual support among women. Despite challenges and setbacks, the
+          vision endured, evolving into a registered organization committed to
+          empowering women and uplifting the girl child.
+        </p>
+        <p>
+          Our journey reflects perseverance, faith, and the unwavering belief
+          that when women rise together, communities are transformed.
+        </p>
+      </section>
+
+      <!-- Leadership Team Grid -->
+      <section class="leadership-section" aria-labelledby="team-heading">
+        <h2 id="team-heading">Executive Team</h2>
+
+        <div class="leadership-grid">
+          <!-- Card 1: Founder -->
+          <article class="profile-card">
+            <figure class="profile-image">
+              <img
+                src="https://via.placeholder.com/400x500?text=Photo"
+                alt="Portrait of Founder Name"
+                loading="lazy"
+              />
+            </figure>
+            <div class="profile-content">
+              <h3>Xxx Xxx</h3>
+              <span class="profile-role">Founder / Chairperson</span>
+              <p class="profile-bio">xxx xxx xxx</p>
+            </div>
+          </article>
+
+          <!-- Card 2: Co-Founder -->
+          <article class="profile-card">
+            <figure class="profile-image">
+              <img
+                src="https://via.placeholder.com/400x500?text=Photo"
+                alt="Portrait of Co-Founder Name"
+                loading="lazy"
+              />
+            </figure>
+            <div class="profile-content">
+              <h3>Xxx Xxx</h3>
+              <span class="profile-role">Co-Founder / Vice Chairperson</span>
+              <p class="profile-bio">xxx xxx xxx</p>
+            </div>
+          </article>
+
+          <!-- Card 3: Secretary -->
+          <article class="profile-card">
+            <figure class="profile-image">
+              <img
+                src="https://via.placeholder.com/400x500?text=Photo"
+                alt="Portrait of Secretary Name"
+                loading="lazy"
+              />
+            </figure>
+            <div class="profile-content">
+              <h3>Xxx Xxx</h3>
+              <span class="profile-role">Secretary</span>
+              <p class="profile-bio">xxx xxx xxx</p>
+            </div>
+          </article>
+
+          <!-- Card 4: Treasurer -->
+          <article class="profile-card">
+            <figure class="profile-image">
+              <img
+                src="https://via.placeholder.com/400x500?text=Photo"
+                alt="Portrait of Treasurer Name"
+                loading="lazy"
+              />
+            </figure>
+            <div class="profile-content">
+              <h3>Xxx Xxx</h3>
+              <span class="profile-role">Treasurer</span>
+              <p class="profile-bio">xxx xxx xxx</p>
+            </div>
+          </article>
+
+          <!-- Card 5: Committee Member -->
+          <article class="profile-card">
+            <figure class="profile-image">
+              <img
+                src="https://via.placeholder.com/400x500?text=Photo"
+                alt="Portrait of Committee Member"
+                loading="lazy"
+              />
+            </figure>
+            <div class="profile-content">
+              <h3>Xxx Xxx</h3>
+              <span class="profile-role">Committee Member</span>
+              <p class="profile-bio">xxx xxx xxx</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <hr class="divider" />
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="container footer-grid">
+          <!-- About Section -->
+          <div class="footer-section footer-about">
+            <div class="footer-branding">
+              <img class="footer-logo" src="./img/ewrta.png" alt="EWRTA Logo" />
+              <h3>
+                <span class="emp">Empowered Women</span> Rising Trust
+                Association
+              </h3>
+            </div>
+            <p id="footer-description">
+              A women-led organization dedicated to empowering women, uplifting
+              the girl child, and building resilient communities.
+            </p>
+          </div>
+
+          <!-- Quick Links -->
+          <div class="footer-section">
+            <h4 class="footer-heading">Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="./index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li>
+                <a href="./programs&initiatives.html">Programs</a>
+              </li>
+              <li><a href="./get-involved.html">Get Involved</a></li>
+              <li><a href="./leadership.html">Leadership</a></li>
+              <li><a href="#">Gallery</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+
+          <!-- Initiatives -->
+          <div class="footer-section">
+            <h4 class="footer-heading">Be A Member</h4>
+            <ul class="footer-links">
+              <li><a href="./contact.html">Join Us</a></li>
+              <li><a href="#">Support the Girl Child</a></li>
+              <li><a href="#">Partner With Us</a></li>
+            </ul>
+          </div>
+
+          <!-- Contact Info -->
+          <div class="footer-section">
+            <h4 class="footer-heading">Contact Us</h4>
+            <ul class="footer-contact">
+              <li>
+                <svg
+                  class="contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
+                  ></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span> 4 Hampshire Drive Eastlea, Harare </span>
+              </li>
+              <li>
+                <svg
+                  class="contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+                  ></path>
+                </svg>
+                <span>
+                  <pre>+971 55 341 5162</pre>
+                  <pre>+971 55 472 3048</pre>
+                </span>
+              </li>
+              <li>
+                <svg
+                  class="contact-icon"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path
+                    d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                  ></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+                <span>info@empoweredwomenrising.org</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div class="container footer-bottom-content">
+          <p class="copyright">
+            © 2026 Empowered Women Rising Trust Association. All Rights
+            Reserved.
+          </p>
+          <div class="footer-social">
+            <a href="#" class="social-link" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Twitter">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"
+                ></path>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Instagram">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
+                ></path>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+              </svg>
+            </a>
+            <a href="#" class="social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"
+                ></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
